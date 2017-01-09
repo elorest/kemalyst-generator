@@ -10,7 +10,7 @@ form action="#{ action }" method="post"
     input type="hidden" name="_method" value="put"
 <% @fields.each do |field| -%>
   div.form-group
-<% case field.type 
+<% case field.type
    when "text" -%>
     textarea.form-control rows="5" name="<%= field.name %>" placeholder="<%= field.name.capitalize %>"  = <%= @name %>.<%= field.name %>
 <% else -%>
